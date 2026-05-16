@@ -16,6 +16,11 @@ The project includes:
 
 # Architecture Overview
 
+The following diagram represents the monitoring, governance, alerting, and cost management architecture implemented in this environment.
+
+## Architecture Diagram
+![Azure Monitoring & Governance Architecture](screenshots/azure-monitoring-governance-architecture.png)
+
 ## Core Services Used
 
 | Service | Purpose |
@@ -26,7 +31,7 @@ The project includes:
 | Azure Alerts | Operational monitoring |
 | Cost Management | Budget tracking and financial governance |
 
-# Resource Group Overview
+# Resource Organization
 
 The monitoring and governance environment was organized using Azure Resource Groups to logically separate infrastructure components and management boundaries.
 
@@ -121,9 +126,11 @@ Azure Cost Management budgets and alerts were configured to proactively monitor 
 
 Resources were tagged using a standardized governance model.
 
-Project | Sonexa 
-Environment | Dev 
-Owner | Gil
+| Tag | Value |
+|---|---|
+| Project | Sonexa |
+| Environment | Dev |
+| Owner | Gil |
 
 This improves:
 - operational organization
@@ -144,7 +151,7 @@ This demonstrates financial governance and operational cost awareness.
 ## Screenshot — Budget Configuration & Alerts
 ![Budget Configuration](screenshots/budget-configuration.png)
 
-# Governance Design Decisions
+# Design Decisions
 
 ## Why Restrict VM Sizes?
 
